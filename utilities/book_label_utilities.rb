@@ -47,8 +47,8 @@ def list_labels
     else
         @labels.each_with_index do |label, index|
             puts "#{index}
-            ID: #{label.id}
-            title: #{title.label}
+            ID: #{label.id},
+            title: #{title.label},
             color: #{color.label}\n"
         end
     end
