@@ -40,3 +40,17 @@ def list_books
         end
     end
 end
+
+def list_labels
+    if @labels.empty?
+        puts "Label list is empty"
+    else
+        @labels.each_with_index do |label, index|
+            puts "#{index}
+            ID: #{label.id}
+            title: #{title.label}
+            color: #{color.label}\n"
+        end
+    end
+end
+end
