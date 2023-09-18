@@ -3,20 +3,20 @@ require_relative 'class/label'
 
 class App
   def initialize
-    @books = [] # Initialize an empty array for storing books
-    @labels = [] # Initialize an empty array for storing labels
+    @books = [] 
+    @labels = [] 
   end
 
-  # Create a label and return it
+
   def create_label
     puts 'Enter the label title: '
     title = gets.chomp
     puts 'Enter the color: '
     color = gets.chomp
 
-    label = Label.new(title, color) # Create a new label
-    @labels.push(label) # Add the label to the labels array
-    label # Return the created label
+    label = Label.new(title, color) 
+    @labels.push(label) 
+    label 
   end
 
   def create_book
@@ -27,10 +27,10 @@ class App
     puts 'What is the book cover state: '
     cover_state = gets.chomp
 
-    book = Book.new(publish_date, publisher, cover_state) # Create a new book
-    label = create_label # Call create_label to get the label object
-    label.add_item(book) # Add the book to the label
-    @books.push(book) # Add the book to the books array
+    book = Book.new(publish_date, publisher, cover_state) 
+    label = create_label 
+    label.add_item(book) 
+    @books.push(book) 
 
     puts 'Book has been created successfully'
   end
