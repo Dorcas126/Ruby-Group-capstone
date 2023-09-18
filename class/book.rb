@@ -33,7 +33,6 @@ class Book < Publication
         "cover_state" => @cover_state,
         "label" => @label
     }.to_json(*args)
-    
   end
 end
 

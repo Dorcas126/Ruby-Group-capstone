@@ -24,4 +24,12 @@ class Book
     @cover_state = cover_state
     @label = nil
   end
+
+  def to_json(*args)
+    {
+        "id" => @id,
+        "title" => @title,
+        "color" => @color
+    }.to_json(*args)
+  end
 end
