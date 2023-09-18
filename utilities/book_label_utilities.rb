@@ -22,9 +22,21 @@ def create_book
     book = Book.new(publish_date, publisher, cover_state)
     label = create_label
     label.add_item(book)
-    @book.push(book)
-    @label.push(label)
+    @books.push(book)
+    @labels.push(label)
 
     puts "Book has been created successfully"
-    
+end
+
+def list_books
+    if @books.empty? 
+        puts "Book list is empty"
+    else
+        @books.each_with_index do |book, index|
+            puts "#{index}
+             ID: #{book.id}
+            publish_date: #{book.publish_date}
+            cover_state: #{book.cover_state}"
+        end
+    end
 end
