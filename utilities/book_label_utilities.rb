@@ -1,7 +1,7 @@
 require_relative '../classes/book'
 require_relative '../classes/label'
 
-Module BookLabelUtilities 
+module BookLabelUtilities 
 def create_label
 p "Enter the label title: "
 title = gets.chomp
@@ -48,9 +48,8 @@ def list_labels
         @labels.each_with_index do |label, index|
             puts "#{index}
             ID: #{label.id},
-            title: #{title.label},
-            color: #{color.label}\n"
+            title: #{label.title},
+            color: #{label.color}\n"
         end
     end
-end
 end
