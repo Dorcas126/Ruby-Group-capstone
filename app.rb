@@ -36,6 +36,11 @@ class App
     end
   end
 
+  def save_data
+    save_books
+    save_labels
+  end
+
   def run
     puts 'Welcome to our catalog of things'
     exit = false
@@ -46,10 +51,13 @@ class App
         pick_action(number)
       elsif number == 10
         exit = true
+        save_data
         puts 'Thank you, see you soon bye!'
       else
         puts "Error friend, wrong input. Sorry, I don't make the rules ¯\\(ツ)/¯"
       end
     end
   end
+
+
 end

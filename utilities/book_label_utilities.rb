@@ -1,5 +1,6 @@
 require_relative '../class/book'
 require_relative '../class/label'
+require 'json'
 
 module BookLabelUtilities
   def initialize
@@ -64,19 +65,21 @@ module BookLabelUtilities
     return unless @books.any?
 
     books_data = JSON.generate(@books, {max_nesting: false})
-    if File.exist?("../storage/books.json")
-        File.write("../storage/books.json", books_data)
+    if File.exist?("./storage/books.json")
+      File.write("./storage/books.json", books_data)
     else
-        File.write("../storage/books.json", books_data, mode: "w+")
+      File.write("./storage/books.json", books_data, mode: "w+")
+    end
   end
 
   def save_labels
     return unless @labels.any?
 
     labels_data = JSON.generate(@labels, {max_nesting: false})
-    if File.exist?("../storage/labels.json")
-        File.write("../storage/labels.json", labels_data)
+    if File.exist?("./storage/labels.json")
+      File.write("./storage/labels.json", labels_data)
     else
-        File.write("../storage/labels.json", labels_data, mode: "w+")
+      File.write("./storage/labels.json", labels_data, mode: "w+")
+    end
   end
-end
+end 
