@@ -1,5 +1,5 @@
-require_relative 'classes/book'
-require_relative 'classes/label'
+require_relative 'class/book'
+require_relative 'class/label'
 
 class App
   def initialize
