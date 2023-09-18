@@ -10,3 +10,21 @@ color = gets.chomp
 
 Label.new(title, color)
 end
+
+def create_book
+    p "When was the book publish?(dd-mm-yyyy): "
+    publish_date gets.chomp
+    p "Enter publisher name: "
+    publisher = gets.chomp
+    p "What is the book cover state: "
+    cover_state = gets.chomp
+
+    book = Book.new(publish_date, publisher, cover_state)
+    label = create_label
+    label.add_item(book)
+    @book.push(book)
+    @label.push(label)
+
+    puts "Book has been created successfully"
+    
+end
