@@ -27,13 +27,11 @@ class Book < Publication
 
   def to_json(*args)
     {
-        "id" => @id,
-        "publish_date" => @publish_date,
-        "publisher" => @publisher,
-        "cover_state" => @cover_state,
-        "label" => @label
+      'id' => @id,
+      'publish_date' => @publish_date,
+      'publisher' => @publisher,
+      'cover_state' => @cover_state,
+      'label' => @label
     }.to_json(*args)
   end
 end
-
-
