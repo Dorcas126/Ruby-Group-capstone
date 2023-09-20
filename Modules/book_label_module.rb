@@ -30,14 +30,13 @@ module BookLabelUtilities
     puts 'Enter the color: '
     color = gets.chomp
 
-
     book = Book.new(publish_date, publisher, cover_state, title, color)
     label = create_label
     label.add_item(book)
     @books.push(book)
 
     puts 'Book has been created successfully'
-end
+  end
 
   def list_books
     if @books.empty?
