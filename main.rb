@@ -1,5 +1,6 @@
 require_relative 'app'
 require_relative 'modules/main_module'
+require_relative 'modules/book_label_module.rb'
 
 class Main
   include MainModule
