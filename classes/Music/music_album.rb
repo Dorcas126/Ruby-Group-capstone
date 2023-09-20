@@ -1,3 +1,4 @@
+require_relative '../item'
 require 'date'
 
 class MusicAlbum < Item
