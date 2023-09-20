@@ -17,4 +17,7 @@ module MusicModule
     end
   end
 
+  def save_music_album_to_file(songs)
+    @music_album_data.save_music_album(songs)
+  end
 end
