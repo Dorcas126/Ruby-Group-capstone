@@ -117,13 +117,13 @@ rspec spec
 
 👤 **Aniekan Winner**
 
-- GitHub: [@githubhandle](https://github.com/DevaWinner)
-- Twitter: [@twitterhandle](https://twitter.com/WinnerDevq)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/winnera/)
+- GitHub: [DevaWinner](https://github.com/DevaWinner)
+- Twitter: [WinnerDevq](https://twitter.com/WinnerDevq)
+- LinkedIn: [winnera](https://www.linkedin.com/in/winnera/)
 
 👤 **Clarence Atim**
 
-- GitHub: [@githubhandle] (https://github.com/ClarenceAtim?tab=repositories)
+- GitHub: [@githubhandle](https://github.com/ClarenceAtim?tab=repositories)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
