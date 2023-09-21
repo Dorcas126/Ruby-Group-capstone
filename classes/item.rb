@@ -2,7 +2,8 @@ require 'date'
 
 # Item class
 class Item
-  attr_reader :publish_date, :archived, :id, :label
+  attr_accessor :publish_date, :id
+  attr_reader :archived, :label
 
   def initialize(publish_date, archived, _id = SecureRandom.uuid)
     @id = SecureRandom.uuid
