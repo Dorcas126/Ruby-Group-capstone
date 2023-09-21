@@ -32,7 +32,7 @@ module MainModule
     publisher = gets.chomp
     puts 'What Is the cover\'s state like? [Enter good or bad]:'
     cover_state = gets.chomp
-    puts 'When was the book published [Enter date format year/month/date]:'
+    puts 'When was the book published [Enter date format YYYY-MM-DD]:'
     publish_date = gets.chomp
     app.create_book(publisher, cover_state, publish_date)
   end
