@@ -4,7 +4,7 @@ module LabelModule
   def list_labels
     if @labels.empty?
       puts "\n"
-      puts 'There are no labels' .colorize(:red)
+      puts 'There are no labels'.colorize(:red)
     else
       @labels.each_with_index do |label, i|
         puts "\n"

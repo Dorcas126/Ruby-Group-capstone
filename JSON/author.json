@@ -1,12 +1,12 @@
 {
 	"Authors": [
 		{
-			"Name": "John",
-			"Age": 30
+			"first_name": "Aniekan",
+			"last_name": "Winner"
 		},
 		{
-			"Name": "Jane",
-			"Age": 25
+			"first_name": "Dorcas",
+			"last_name": "Uwimbabazi"
 		}
 	]
 }

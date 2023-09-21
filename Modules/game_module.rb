@@ -9,7 +9,7 @@ module GameModule
   def list_games
     if @games.empty?
       puts "\n"
-      puts 'There are no games' .colorize(:red)
+      puts 'There are no games'.colorize(:red)
     else
       @games.each_with_index do |game, i|
         lpa = game.last_played_at

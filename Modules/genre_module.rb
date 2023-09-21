@@ -4,7 +4,7 @@ module GenreModule
   def list_genres
     if @genres.empty?
       puts "\n"
-      puts 'There are no genre' .colorize(:red)
+      puts 'There are no genre'.colorize(:red)
     else
       @genres.each_with_index do |genre, i|
         puts "\n"

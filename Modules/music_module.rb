@@ -10,7 +10,7 @@ module MusicModule
   def list_musicalbums
     if @songs.empty?
       puts "\n"
-      puts 'There are no music album' .colorize(:red)
+      puts 'There are no music album'.colorize(:red)
     else
       @songs.each_with_index do |song, i|
         puts "\n"

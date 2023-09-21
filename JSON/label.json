@@ -1,12 +1,12 @@
 {
 	"Labels": [
     {
-      "Name": "Label1",
-      "Color": "red"
+      "title": "Label1",
+      "color": "red"
     },
     {
-      "Name": "Label2",
-      "Color": "blue"
+      "title": "Label2",
+      "color": "blue"
     }
 	]
 }
