@@ -12,7 +12,10 @@ module BookModule
       puts 'Book list is empty'
     else
       @books.each_with_index do |book, index|
-        puts "#{index + 1}) Publisher: #{book.publisher}, Cover state: #{book.cover_state}, Published: #{book.publish_date}"
+        puts "#{index + 1}
+        Publisher: #{book.publisher}
+        Cover state: #{book.cover_state}
+        Published: #{book.publish_date}"
       end
     end
   end
