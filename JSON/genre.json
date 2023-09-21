@@ -1,5 +1,16 @@
 {
 	"Genres": [
-
+{
+    "Name": "Action",
+    "Description": "Action movies"
+  },
+  {
+    "Name": "Adventure",
+    "Description": "Adventure movies"
+  },
+  {
+    "Name": "Animation",
+    "Description": "Animation movies"
+  }
 	]
 }

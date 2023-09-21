@@ -1,5 +1,12 @@
 {
-	"Lables": [
-
+	"Labels": [
+    {
+      "Name": "Label1",
+      "Color": "red"
+    },
+    {
+      "Name": "Label2",
+      "Color": "blue"
+    }
 	]
 }
