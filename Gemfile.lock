@@ -1,7 +1,9 @@
 GEM
+  remote: https://rubygems.org/
   specs:
     ast (2.4.2)
     base64 (0.1.1)
+    colorize (1.1.0)
     json (2.6.3)
     language_server-protocol (3.17.0.3)
     parallel (1.23.0)
@@ -31,9 +33,11 @@ GEM
 
 PLATFORMS
   x64-mingw-ucrt
+  x86_64-linux
 
 DEPENDENCIES
+  colorize (= 1.1.0)
   rubocop (>= 1.0, < 2.0)
 
 BUNDLED WITH
-   2.4.10
+   2.4.19

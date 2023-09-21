@@ -8,10 +8,12 @@ module GameModule
 
   def list_games
     if @games.empty?
-      puts 'There are no games'
+      puts "\n"
+      puts 'There are no games' .colorize(:red)
     else
       @games.each_with_index do |game, i|
         lpa = game.last_played_at
+        puts "\n"
         puts "#{i + 1}) Multiplayer: #{game.multiplayer}, last played: #{lpa}, published: #{game.publish_date}"
       end
     end
