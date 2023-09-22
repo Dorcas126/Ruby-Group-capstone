@@ -9,7 +9,7 @@ class LabelManager
 
     data = JSON.parse(File.read("#{DATA_FOLDER}label.json"))
     labels = []
-    data['Lables'].map { |label_data| labels << Label.new(label_data['title'], label_data['color']) }
+    data['Labels'].map { |label_data| labels << Label.new(label_data['title'], label_data['color']) }
     labels
   end
 end

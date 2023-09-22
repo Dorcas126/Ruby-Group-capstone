@@ -1,21 +1,24 @@
 require_relative '../classes/Book/book'
+require 'colorize'
 
 module BookModule
-  def create_book(publisher, publish_date, cover_state)
-    book = Book.new(publisher, publish_date, cover_state)
+  def create_book(publisher, cover_state, publish_date)
+    book = Book.new(publisher, cover_state, publish_date)
     @books << book
     save_book_to_file(@books)
   end
 
   def list_books
+    puts "\n"
     if @books.empty?
-      puts 'Book list is empty'
+      puts 'There are no books'.colorize(:red)
     else
-      @books.each_with_index do |book, index|
-        puts "#{index + 1}
-        Publisher: #{book.publisher}
-        Cover state: #{book.cover_state}
-        Published: #{book.publish_date}"
+      puts 'Books List'.colorize(:green)
+      puts '-----------'.colorize(:green)
+      @books.each_with_index do |book, i|
+        puts "#{i + 1}) Publisher:".colorize(:light_blue) + " #{book.publisher}, " +
+             'Cover State:'.colorize(:light_blue) + " #{book.cover_state}, " +
+             'Published:'.colorize(:light_blue) + " #{book.publish_date}"
       end
     end
   end

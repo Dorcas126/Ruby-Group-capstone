@@ -68,6 +68,14 @@ In order to run this project you need:
 - Interactive Ruby.
 - Code Editor.
 
+### Installation
+
+Before you begin, ensure you have met the following requirements:
+
+- [Ruby](https://www.ruby-lang.org/) installed on your machine.
+- [RubyGems](https://rubygems.org/pages/download) installed, which usually comes with Ruby.
+- [Bundler](https://bundler.io/) gem installed (to manage project dependencies).
+
 ### Setup
 
 Clone this repository to your desired folder:
@@ -77,11 +85,23 @@ Clone this repository to your desired folder:
   gh repo clone git@github.com:Dorcas126/Ruby-Group-capstone.git
 ```
 
-### Installation
+Navigate to the project directory:
 
-Install **Ruby Installer** using this link
+```sh
+  cd Ruby-Group-capstone
+```
 
-- <a href="https://rubyinstaller.org/downloads/">Ruby Installer</a>.
+Install Bundler (if not already installed):
+
+```sh
+  gem install bundler
+```
+
+Install project dependencies using Bundler:
+
+```sh
+  bundle install
+```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -93,13 +113,7 @@ To run the project, execute the following command:
 ruby main.rb
 ```
 
-To run the project, execute the following command:
-
-```
-rspec spec --format documentation
-```
-
-or
+To run the project test, execute the following command:
 
 ```
 rspec spec
