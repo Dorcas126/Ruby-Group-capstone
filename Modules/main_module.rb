@@ -4,25 +4,19 @@ module MainModule
     puts 'Is game multiplayes [Yes/No]:'
     multiplayer = gets.chomp
     puts 'When is game last played [Enter date format YYYY-MM-DD]:'
-    last_played_at = gets.chomp
+    last_played_at = valid_date_input
     puts 'When is game published [Enter date format YYYY-MM-DD]:'
-    publish_date = gets.chomp
+    publish_date = valid_date_input
     app.create_game(multiplayer, last_played_at, publish_date)
   end
 
   def add_mucicalbum(app)
     puts "\n"
-    puts 'Is it on spotify [True/False]:'
+    puts 'Is it on Spotify [True/False]:'
     on_spotify = gets.chomp
-    if %w[True true].include?(on_spotify)
-      on_spotify = true
-    elsif %w[False false].include?(on_spotify)
-      on_spotify = false
-    else
-      puts 'Invalid input'
-    end
+    on_spotify = %w[True true].include?(on_spotify)
     puts 'When is album published [Enter date format YYYY-MM-DD]:'
-    publish_date = gets.chomp
+    publish_date = valid_date_input
     app.create_musicalbum(publish_date, on_spotify)
   end
 
@@ -33,7 +27,19 @@ module MainModule
     puts 'What Is the cover\'s state like? [Enter good or bad]:'
     cover_state = gets.chomp
     puts 'When was the book published [Enter date format YYYY-MM-DD]:'
-    publish_date = gets.chomp
+    publish_date = valid_date_input
     app.create_book(publisher, cover_state, publish_date)
+  end
+
+  private
+
+  def valid_date_input
+    loop do
+      input = gets.chomp
+      return input if input.match?(/\A\d{4}-\d{2}-\d{2}\z/)
+
+
+      puts 'Invalid date format. Please enter a date in the format YYYY-MM-DD:'
+    end
   end
 end
