@@ -38,7 +38,6 @@ module MainModule
       input = gets.chomp
       return input if input.match?(/\A\d{4}-\d{2}-\d{2}\z/)
 
-
       puts 'Invalid date format. Please enter a date in the format YYYY-MM-DD:'
     end
   end
